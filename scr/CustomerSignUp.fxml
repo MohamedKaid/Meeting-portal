@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinalProject.CustomerSignUpController">
+   <children>
+      <Label layoutX="146.0" layoutY="37.0" prefHeight="25.0" prefWidth="108.0" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="customerUserName" focusColor="#ce47e0" layoutX="138.0" layoutY="123.0" prefHeight="30.0" prefWidth="275.0" unFocusColor="#282828" />
+      <JFXPasswordField fx:id="customerPassword" focusColor="#ce47e0" layoutX="139.0" layoutY="178.0" prefHeight="30.0" prefWidth="275.0" unFocusColor="#1e1e1e" />
+      <JFXPasswordField fx:id="reTypePassword" focusColor="#ce47e0" layoutX="138.0" layoutY="231.0" prefHeight="30.0" prefWidth="275.0" unFocusColor="#1e1e1e" />
+      <JFXButton buttonType="RAISED" layoutX="295.0" layoutY="348.0" onAction="#signUpAction" opacity="0.72" prefHeight="30.0" prefWidth="91.0" ripplerFill="BLACK" style="-fx-background-color: #c407e1; -fx-background-radius: 360;" text="Save" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorInput />
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="194.0" layoutY="348.0" onAction="#ReturnAction" opacity="0.72" prefHeight="30.0" prefWidth="91.0" ripplerFill="BLACK" style="-fx-background-color: #c407e1; -fx-background-radius: 360;" text="Go Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorInput />
+         </effect>
+      </JFXButton>
+      <Label layoutX="58.0" layoutY="123.0" prefHeight="30.0" prefWidth="80.0" text="UserName:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="178.0" prefHeight="30.0" prefWidth="74.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="signUpLabel" layoutX="10.0" layoutY="299.0" prefHeight="30.0" prefWidth="376.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="231.0" prefHeight="30.0" prefWidth="130.0" text="ReType Password:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

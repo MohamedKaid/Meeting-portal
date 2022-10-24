@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="274.0" prefWidth="602.0" style="-fx-background-color: #607D8B;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="FinalProject.CustomerAppStatusController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="234.0" onAction="#LogOutAction" opacity="0.72" prefHeight="25.0" prefWidth="130.0" ripplerFill="BLACK" style="-fx-background-color: #c407e1; -fx-background-radius: 360;" text="Logout" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorInput />
+         </effect>
+      </JFXButton>
+      <JFXTextField fx:id="Email" focusColor="#ce47e0" layoutX="215.0" layoutY="60.0" prefHeight="30.0" prefWidth="293.0" unFocusColor="#282828" />
+      <Label layoutX="59.0" layoutY="60.0" prefHeight="30.0" prefWidth="155.0" text="Enter Email Address:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="AppStatus" layoutX="50.0" layoutY="137.0" prefHeight="62.0" prefWidth="535.0" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="236.0" layoutY="234.0" onAction="#BackAction" opacity="0.72" prefHeight="25.0" prefWidth="130.0" ripplerFill="BLACK" style="-fx-background-color: #c407e1; -fx-background-radius: 360;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorInput />
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="457.0" layoutY="234.0" onAction="#CheckAction" opacity="0.72" prefHeight="25.0" prefWidth="130.0" ripplerFill="BLACK" style="-fx-background-color: #c407e1; -fx-background-radius: 360;" text="Check Status" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorInput />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

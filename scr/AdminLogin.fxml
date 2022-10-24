@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinalProject.AdminLoginController">
+   <children>
+      <JFXTextField fx:id="adminUser" focusColor="#ce47e0" layoutX="40.0" layoutY="104.0" prefHeight="30.0" prefWidth="293.0" unFocusColor="#282828" />
+      <Label layoutX="40.0" layoutY="79.0" text="UserName" textFill="WHITE" />
+      <Label layoutX="43.0" layoutY="162.0" text="Password" textFill="WHITE" />
+      <JFXPasswordField fx:id="adminPassword" focusColor="#ce47e0" layoutX="40.0" layoutY="188.0" prefHeight="25.0" prefWidth="293.0" unFocusColor="#1e1e1e" />
+      <JFXButton buttonType="RAISED" layoutX="40.0" layoutY="295.0" onAction="#AdminLoginAction" opacity="0.72" prefHeight="25.0" prefWidth="293.0" ripplerFill="BLACK" style="-fx-background-color: #c407e1; -fx-background-radius: 360;" text="Login" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorInput />
+         </effect>
+      </JFXButton>
+      <Hyperlink layoutX="207.0" layoutY="351.0" onAction="#ReturnAction" opacity="0.66" prefHeight="29.0" prefWidth="160.0" text="Return To Main Login" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="40.0" layoutY="14.0" prefHeight="52.0" prefWidth="239.0" text="Admin Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="foundLabel" layoutX="37.0" layoutY="237.0" prefHeight="29.0" prefWidth="293.0" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="24.0" layoutY="351.0" onAction="#adminHelp" opacity="0.66" prefHeight="29.0" prefWidth="160.0" text="Need Help Signing in?" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

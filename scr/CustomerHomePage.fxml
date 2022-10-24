@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="556.0" prefWidth="700.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinalProject.CustomerHomePageController">
+   <children>
+      <Label layoutX="26.0" layoutY="220.0" prefHeight="30.0" prefWidth="110.0" text="Phone Number:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="141.0" prefHeight="30.0" prefWidth="110.0" text="Business Name:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="182.0" prefHeight="30.0" prefWidth="120.0" text="Business Address:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="263.0" prefHeight="30.0" prefWidth="110.0" text="Reason for Visit:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="CustomerName" focusColor="#ce47e0" layoutX="131.0" layoutY="58.0" prefHeight="30.0" prefWidth="293.0" unFocusColor="#282828" />
+      <JFXTextField fx:id="CustomerEmail" focusColor="#ce47e0" layoutX="131.0" layoutY="103.0" prefHeight="30.0" prefWidth="293.0" unFocusColor="#282828" />
+      <JFXTextField fx:id="BizzName" focusColor="#ce47e0" layoutX="131.0" layoutY="141.0" prefHeight="30.0" prefWidth="293.0" unFocusColor="#282828" />
+      <JFXTextField fx:id="BizzAddress" focusColor="#ce47e0" layoutX="131.0" layoutY="182.0" prefHeight="30.0" prefWidth="293.0" unFocusColor="#282828" />
+      <JFXTextField fx:id="PhoneNum" focusColor="#ce47e0" layoutX="131.0" layoutY="220.0" prefHeight="30.0" prefWidth="293.0" unFocusColor="#282828" />
+      <JFXTextArea fx:id="MeetingDetails" focusColor="#ce47e0" layoutX="131.0" layoutY="263.0" prefHeight="185.0" prefWidth="293.0" unFocusColor="#282828" />
+      <JFXDatePicker fx:id="day" defaultColor="#ce47e0" layoutX="473.0" layoutY="142.0" onAction="#CheckDate" promptText="Date of Appointment" />
+      <ComboBox fx:id="Time" layoutX="473.0" layoutY="200.0" prefHeight="30.0" prefWidth="171.0" promptText="Meeting Time" />
+      <ComboBox fx:id="Employer" layoutX="473.0" layoutY="263.0" prefHeight="30.0" prefWidth="171.0" promptText="Meeting With" />
+      <JFXButton buttonType="RAISED" layoutX="558.0" layoutY="514.0" onAction="#ReserveAction" opacity="0.72" prefHeight="25.0" prefWidth="130.0" ripplerFill="BLACK" style="-fx-background-color: #c407e1; -fx-background-radius: 360;" text="Reserve" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorInput />
+         </effect>
+      </JFXButton>
+      <Hyperlink layoutX="428.0" layoutY="512.0" onAction="#CustomerCheckStatus" prefHeight="25.0" prefWidth="120.0" text="Check Status " textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Hyperlink>
+      <JFXButton buttonType="RAISED" layoutX="16.0" layoutY="514.0" onAction="#LogOutAction" opacity="0.72" prefHeight="25.0" prefWidth="130.0" ripplerFill="BLACK" style="-fx-background-color: #c407e1; -fx-background-radius: 360;" text="Logout" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorInput />
+         </effect>
+      </JFXButton>
+      <Label layoutX="81.0" layoutY="103.0" prefHeight="30.0" prefWidth="56.0" text="E-Mail:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="58.0" prefHeight="30.0" prefWidth="80.0" text="Full Name:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelStatus" layoutX="517.0" layoutY="461.0" prefHeight="29.0" prefWidth="171.0" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

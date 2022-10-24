@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="1152.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinalProject.AdminHomePageController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="358.0" onAction="#LogOutAction" opacity="0.72" prefHeight="25.0" prefWidth="130.0" ripplerFill="BLACK" style="-fx-background-color: #c407e1; -fx-background-radius: 360;" text="Logout" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorInput />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="Decline" buttonType="RAISED" layoutX="707.0" layoutY="357.0" onAction="#DeclineAction" opacity="0.72" prefHeight="26.0" prefWidth="150.0" ripplerFill="BLACK" style="-fx-background-color: #c407e1; -fx-background-radius: 360;" text="Decline" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorInput />
+         </effect>
+      </JFXButton>
+      <TableView fx:id="AppDisplay" prefHeight="322.0" prefWidth="1153.0">
+        <columns>
+          <TableColumn fx:id="Name" prefWidth="119.0" text="Name" />
+          <TableColumn fx:id="Email" prefWidth="112.0" text="E-mail" />
+            <TableColumn fx:id="BizzName" prefWidth="123.0" text="Business Name" />
+            <TableColumn fx:id="BizzAdd" prefWidth="131.0" text="Business Address" />
+            <TableColumn fx:id="PhoneNum" prefWidth="130.0" text="Phone Number" />
+            <TableColumn fx:id="MDetails" prefWidth="233.0" text="Meeting Details" />
+            <TableColumn fx:id="Date" minWidth="0.0" prefWidth="90.0" text="Date" />
+            <TableColumn fx:id="Time" minWidth="0.0" prefWidth="85.0" text="Time" />
+            <TableColumn fx:id="MWith" minWidth="7.0" prefWidth="125.60009765625" text="Meeting with" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="Accept" buttonType="RAISED" layoutX="502.0" layoutY="357.0" onAction="#AcceptAction" opacity="0.72" prefHeight="26.0" prefWidth="150.0" ripplerFill="BLACK" style="-fx-background-color: #c407e1; -fx-background-radius: 360;" text="Accept" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorInput />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>
